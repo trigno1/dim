@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mountain",
+      "description": "A minimal vector-style illustration of a mountain range at dawn.",
+      "imageUrl": "https://picsum.photos/seed/101/1920/1080",
+      "imageHint": "mountain illustration"
+    },
+    {
+      "id": "author-avatar",
+      "description": "A minimalist avatar of the author.",
+      "imageUrl": "https://picsum.photos/seed/102/200/200",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "about-illustration",
+      "description": "A subtle line art illustration of a stack of books and a pen.",
+      "imageUrl": "https://picsum.photos/seed/103/500/500",
+      "imageHint": "line art book"
+    },
+    {
+      "id": "blog-1",
+      "description": "Thumbnail for a blog post about hiking.",
+      "imageUrl": "https://picsum.photos/seed/201/600/400",
+      "imageHint": "hiking trail"
+    },
+    {
+      "id": "blog-2",
+      "description": "Thumbnail for a blog post about creative writing.",
+      "imageUrl": "https://picsum.photos/seed/202/600/400",
+      "imageHint": "writing journal"
+    },
+    {
+      "id": "blog-3",
+      "description": "Thumbnail for a blog post about web development.",
+      "imageUrl": "https://picsum.photos/seed/203/600/400",
+      "imageHint": "code screen"
+    },
+    {
+      "id": "blog-4",
+      "description": "Thumbnail for a blog post about travel.",
+      "imageUrl": "https://picsum.photos/seed/204/600/400",
+      "imageHint": "travel map"
+    },
+    {
+      "id": "project-1",
+      "description": "Thumbnail for a web application project.",
+      "imageUrl": "https://picsum.photos/seed/301/600/400",
+      "imageHint": "web design"
+    },
+    {
+      "id": "project-2",
+      "description": "Thumbnail for a photography portfolio project.",
+      "imageUrl": "https://picsum.photos/seed/302/600/400",
+      "imageHint": "camera lens"
+    },
+    {
+      "id": "project-3",
+      "description": "Thumbnail for a branding project.",
+      "imageUrl": "https://picsum.photos/seed/303/600/400",
+      "imageHint": "brand logo"
+    }
+  ]
 }
