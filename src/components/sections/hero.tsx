@@ -44,14 +44,14 @@ export function Hero() {
           {authorAvatar && (
             <Avatar className="w-24 h-24 mx-auto mb-4 border-4 border-background shadow-lg">
               <AvatarImage src={authorAvatar.imageUrl} alt="Author Avatar" data-ai-hint={authorAvatar.imageHint} />
-              <AvatarFallback>AA</AvatarFallback>
+              <AvatarFallback>JD</AvatarFallback>
             </Avatar>
           )}
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
             Jane Doe
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-foreground/80">
-            Developer, Writer, and Explorer. Charting the ascents in technology and life.
+            A personal journey through the world of law.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="font-semibold">

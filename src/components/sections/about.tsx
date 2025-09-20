@@ -13,13 +13,13 @@ export function About() {
               A Little About My Journey
             </h2>
             <p>
-              Hello! I'm Jane, the voice and vision behind Alpine Ascent. By day, I'm a passionate software developer, crafting clean code and intuitive digital experiences. By night (and on weekends), I'm an avid explorer of both the natural world and the vast landscapes of literature.
+              Welcome to Legal Verse. I'm Jane Doe, a legal professional navigating the intricate world of law and its intersection with our daily lives. This is my space to demystify complex legal topics and share my personal insights.
             </p>
             <p>
-              This blog is a convergence of my worlds. It's a space where I document my technical explorations, share stories from my travels, and reflect on the creative process. 'Alpine Ascent' symbolizes the constant climb towards growth, knowledge, and new perspectives—whether it's summiting a mountain or mastering a new technology.
+              This blog is a convergence of my professional expertise and my passion for clear communication. It's a platform where I document my thoughts on emerging legal trends, break down landmark cases, and reflect on the ethical dimensions of the law.
             </p>
             <p>
-              My goal is to create a community of curious minds. I hope my writing inspires you to learn, create, and explore your own passions. Thanks for joining me on this climb!
+              My goal is to create a community of informed and engaged individuals. I hope my writing empowers you with a clearer understanding of the legal landscape. Thank you for joining me on this journey.
             </p>
           </div>
           <div className="relative h-64 w-64 md:h-80 md:w-80 justify-self-center">
