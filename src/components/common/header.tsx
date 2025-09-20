@@ -12,7 +12,6 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#blog', label: 'Blog' },
   { href: '#projects', label: 'Projects' },
-  { href: '#ai-tools', label: 'AI Tools' },
   { href: '#contact', label: 'Contact' },
 ];
 
