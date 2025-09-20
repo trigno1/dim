@@ -17,7 +17,7 @@ const fontPTSans = PT_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Alpine Ascent | A Personal Journey',
+  title: 'Legal Verse | A Personal Journey',
   description: 'A minimal and elegant blog and portfolio website.',
 };
 

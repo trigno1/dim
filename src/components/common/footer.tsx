@@ -18,7 +18,7 @@ export function Footer() {
         <Separator className="mb-8" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Alpine Ascent. All rights reserved.
+            © {new Date().getFullYear()} Legal Verse. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             {socialLinks.map(({ href, icon: Icon, label }) => (
