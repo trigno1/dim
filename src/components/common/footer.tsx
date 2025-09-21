@@ -9,7 +9,6 @@ const usefulLinks = [
   { href: '#about', label: 'About Us' },
   { href: '#blog', label: 'Blogs' },
   { href: '#projects', label: 'What people say about us' },
-  { href: '#contact', label: 'Contact' },
   { href: '/submit-blog', label: 'Submit your own blog' },
 ];
 
