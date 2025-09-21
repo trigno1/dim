@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
+import { Logo } from '@/components/common/logo';
 
 export function Hero() {
   const [offsetY, setOffsetY] = useState(0);
@@ -18,7 +18,6 @@ export function Hero() {
   }, []);
   
   const mountainImage = PlaceHolderImages.find(p => p.id === 'hero-mountain');
-  const authorAvatar = PlaceHolderImages.find(p => p.id === 'author-avatar');
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden p-0">
@@ -41,12 +40,9 @@ export function Hero() {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-foreground p-4">
         <div className="fade-in-up">
-          {authorAvatar && (
-            <Avatar className="w-24 h-24 mx-auto mb-4 border-4 border-background shadow-lg">
-              <AvatarImage src={authorAvatar.imageUrl} alt="Author Avatar" data-ai-hint={authorAvatar.imageHint} />
-              <AvatarFallback>LV</AvatarFallback>
-            </Avatar>
-          )}
+          <div className="w-24 h-24 mx-auto mb-4 border-4 border-background shadow-lg rounded-full flex items-center justify-center bg-background/50">
+            <Logo className="w-12 h-12 text-primary" />
+          </div>
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
             Legal Verse
           </h1>
