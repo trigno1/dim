@@ -15,7 +15,7 @@ const usefulLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground w-full pt-20 pb-8 relative">
+    <footer className="bg-secondary text-secondary-foreground w-full pt-20 pb-8 relative border-t-2 border-white">
       <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-secondary rounded-full p-2 border-4 border-background">
          <Image src="/logo.png" alt="Legal Verse Logo" width={48} height={48} className="bg-background rounded-full p-1" />
       </div>
@@ -60,15 +60,11 @@ export function Footer() {
         <Separator className="my-8 bg-border/50" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <p className="text-muted-foreground order-2 md:order-1">
+          <p className="text-muted-foreground order-1 md:order-1">
             © {new Date().getFullYear()} Legal Verse. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 order-1 md:order-2 text-center">
+          <div className="flex items-center gap-2 order-2 md:order-2 text-center">
             <p className="text-muted-foreground">Designed & Managed by Tanish sunita pareek</p>
-          </div>
-          <div className="flex items-center gap-4 order-3">
-            <Link href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-primary-foreground transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>

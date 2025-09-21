@@ -16,8 +16,8 @@ body {
     --popover-foreground: 240 10% 3.9%;
     --primary: 93 27% 85%; /* Soft light green #D7E4CD */
     --primary-foreground: 93 25% 25%;
-    --secondary: 30 20% 92%;
-    --secondary-foreground: 240 10% 3.9%;
+    --secondary: 212 47% 17%; /* #182b40 */
+    --secondary-foreground: 0 0% 98%;
     --muted: 30 20% 92%;
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 207 39% 70%; /* Muted blue #95B8D1 */
@@ -51,7 +51,7 @@ body {
     --popover-foreground: 0 0% 98%;
     --primary: 93 27% 85%;
     --primary-foreground: 93 25% 25%;
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 212 47% 17%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
