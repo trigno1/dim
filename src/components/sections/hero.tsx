@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
-import { Logo } from '@/components/common/logo';
 
 export function Hero() {
   const [offsetY, setOffsetY] = useState(0);
@@ -40,8 +39,8 @@ export function Hero() {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-foreground p-4">
         <div className="fade-in-up">
-          <div className="w-24 h-24 mx-auto mb-4 border-4 border-background shadow-lg rounded-full flex items-center justify-center bg-background/50">
-            <Logo className="w-12 h-12 text-primary" />
+          <div className="w-24 h-24 mx-auto mb-4 border-4 border-background shadow-lg rounded-full flex items-center justify-center bg-background/50 overflow-hidden">
+            <Image src="/logo.png" alt="Legal Verse Logo" width={64} height={64} />
           </div>
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
             Legal Verse
