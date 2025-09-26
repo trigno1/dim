@@ -15,6 +15,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { BrainCircuit, Loader2, Sparkles } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
   topic: z.string().min(3, { message: 'Topic must be at least 3 characters long.' }),
@@ -25,6 +26,7 @@ const formSchema = z.object({
 export function ContentGenerator() {
   const [suggestions, setSuggestions] = useState<BlogContentSuggestionsOutput | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -43,15 +45,19 @@ export function ContentGenerator() {
       setSuggestions(result);
     } catch (error) {
       console.error('Error generating suggestions:', error);
-      // Here you could use a toast to show an error
+      toast({
+        title: 'Error Generating Suggestions',
+        description: 'There was a problem communicating with the AI. Please try again.',
+        variant: 'destructive',
+      })
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <section id="ai-tools" className="bg-background">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="ai-tools" className="bg-secondary/5">
+      <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
             <BrainCircuit className="w-8 h-8 text-primary" />
@@ -78,7 +84,7 @@ export function ContentGenerator() {
                       <FormItem>
                         <FormLabel>Blog Topic</FormLabel>
                         <FormControl>
-                          <Input placeholder="e.g., The future of React" {...field} />
+                          <Input placeholder="e.g., The future of contract law" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -91,7 +97,7 @@ export function ContentGenerator() {
                       <FormItem>
                         <FormLabel>Keywords</FormLabel>
                         <FormControl>
-                          <Input placeholder="e.g., Server Components, Hooks, State Management" {...field} />
+                          <Input placeholder="e.g., Smart Contracts, AI, Legal Tech" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -111,9 +117,9 @@ export function ContentGenerator() {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="Informative">Informative</SelectItem>
-                            <SelectItem value="Humorous">Humorous</SelectItem>
-                            <SelectItem value="Technical">Technical</SelectItem>
-                            <SelectItem value="Inspirational">Inspirational</SelectItem>
+                            <SelectItem value="Persuasive">Persuasive</SelectItem>
+                            <SelectItem value="Formal">Formal</SelectItem>
+                            <SelectItem value="Analytical">Analytical</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />
@@ -134,9 +140,15 @@ export function ContentGenerator() {
 
           <div className="space-y-6">
             {isLoading && (
-                <div className="flex flex-col items-center justify-center text-center p-8 border-2 border-dashed rounded-lg h-full">
+                <div className="flex flex-col items-center justify-center text-center p-8 border-2 border-dashed rounded-lg h-full min-h-[400px]">
                     <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
                     <p className="text-muted-foreground font-semibold">Generating brilliant ideas...</p>
+                </div>
+            )}
+            {!isLoading && !suggestions && (
+               <div className="flex flex-col items-center justify-center text-center p-8 border-2 border-dashed rounded-lg h-full min-h-[400px]">
+                    <Sparkles className="h-12 w-12 text-primary mb-4" />
+                    <p className="text-muted-foreground font-semibold">Your AI-powered suggestions will appear here.</p>
                 </div>
             )}
             {suggestions && (

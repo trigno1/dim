@@ -1,16 +1,14 @@
 import { Header } from "@/components/common/header";
 import { Footer } from "@/components/common/footer";
-import { Blog } from "@/components/sections/blog";
-import { ContentGenerator } from "@/components/sections/content-generator";
+import { Projects as ProjectsSection } from "@/components/sections/projects";
 import { PageTransition } from "@/components/page-transition";
 
-export default function Home() {
+export default function ProjectsPage() {
   return (
     <PageTransition>
       <Header />
-      <main className="flex flex-col items-center justify-center">
-        <Blog />
-        <ContentGenerator />
+      <main>
+        <ProjectsSection />
       </main>
       <Footer />
     </PageTransition>

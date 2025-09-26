@@ -9,9 +9,9 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#blog', label: 'Blog' },
-  { href: '#projects', label: 'Projects' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/projects', label: 'Projects' },
 ];
 
 export function Header() {
@@ -44,7 +44,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-headline text-lg font-semibold">
-          <Image src="/logo.png" alt="Legal Verse Logo" width={24} height={24} className="text-primary" />
+          <Image src="/logo.png" alt="Legal Verse Logo" width={24} height={24} />
           <span>Legal Verse</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -61,7 +61,7 @@ export function Header() {
             <SheetContent side="right">
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-                   <Image src="/logo.png" alt="Legal Verse Logo" width={24} height={24} className="text-primary" />
+                   <Image src="/logo.png" alt="Legal Verse Logo" width={24} height={24} />
                   <span>Legal Verse</span>
                 </Link>
                 {navLinks.map((link) => (

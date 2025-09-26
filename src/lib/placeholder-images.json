@@ -3,62 +3,62 @@
     {
       "id": "hero-mountain",
       "description": "A minimal vector-style illustration of a mountain range at dawn.",
-      "imageUrl": "https://picsum.photos/seed/101/1920/1080",
+      "imageUrl": "https://images.unsplash.com/photo-1722797657693-c5310c526215?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NTg4ODUwNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain illustration"
     },
     {
       "id": "author-avatar",
       "description": "A minimalist avatar of the author.",
-      "imageUrl": "https://picsum.photos/seed/102/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODg2Nzc5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "about-illustration",
-      "description": "A subtle line art illustration of a stack of books and a pen.",
-      "imageUrl": "https://picsum.photos/seed/103/500/500",
-      "imageHint": "line art book"
+      "description": "A modern and professional illustration for a law-themed about page.",
+      "imageUrl": "https://images.unsplash.com/photo-1658250273007-ced0cbd4c038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXd5ZXIlMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzU4ODg1MDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lawyer professional"
     },
     {
       "id": "blog-1",
-      "description": "Thumbnail for a blog post about hiking.",
-      "imageUrl": "https://picsum.photos/seed/201/600/400",
-      "imageHint": "hiking trail"
+      "description": "Thumbnail for a blog post about legal tech.",
+      "imageUrl": "https://images.unsplash.com/photo-1555374018-13a8994ab246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWdhbCUyMHRlY2h8ZW58MHx8fHwxNzU4ODg1MDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "legal tech"
     },
     {
       "id": "blog-2",
-      "description": "Thumbnail for a blog post about creative writing.",
-      "imageUrl": "https://picsum.photos/seed/202/600/400",
-      "imageHint": "writing journal"
+      "description": "Thumbnail for a blog post about intellectual property.",
+      "imageUrl": "https://images.unsplash.com/photo-1503146556350-2571318acceb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaWdodGJ1bGIlMjBpZGVhfGVufDB8fHx8MTc1ODgzMDY1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lightbulb idea"
     },
     {
       "id": "blog-3",
-      "description": "Thumbnail for a blog post about web development.",
-      "imageUrl": "https://picsum.photos/seed/203/600/400",
-      "imageHint": "code screen"
+      "description": "Thumbnail for a blog post about corporate law.",
+      "imageUrl": "https://images.unsplash.com/photo-1653237492105-2a9adcf930f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaXR5JTIwc2t5c2NyYXBlcnN8ZW58MHx8fHwxNzU4Nzg4ODcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city skyscrapers"
     },
     {
       "id": "blog-4",
-      "description": "Thumbnail for a blog post about travel.",
-      "imageUrl": "https://picsum.photos/seed/204/600/400",
-      "imageHint": "travel map"
+      "description": "Thumbnail for a blog post about negotiation.",
+      "imageUrl": "https://images.unsplash.com/photo-1752159646124-27b7f6973be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGFuZHNoYWtlJTIwbWVldGluZ3xlbnwwfHx8fDE3NTg4NzE1MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handshake meeting"
     },
     {
       "id": "project-1",
-      "description": "Thumbnail for a web application project.",
-      "imageUrl": "https://picsum.photos/seed/301/600/400",
-      "imageHint": "web design"
+      "description": "Thumbnail for a pro bono portal project.",
+      "imageUrl": "https://images.unsplash.com/photo-1722697309159-cfd535e93549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tdW5pdHklMjBoZWxwfGVufDB8fHx8MTc1ODc3OTM1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community help"
     },
     {
       "id": "project-2",
-      "description": "Thumbnail for a photography portfolio project.",
-      "imageUrl": "https://picsum.photos/seed/302/600/400",
-      "imageHint": "camera lens"
+      "description": "Thumbnail for an AI contract analyzer project.",
+      "imageUrl": "https://images.unsplash.com/photo-1646092970097-63189b03f9de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxBSSUyMGRvY3VtZW50fGVufDB8fHx8MTc1ODg4NTA0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "AI document"
     },
     {
       "id": "project-3",
-      "description": "Thumbnail for a branding project.",
-      "imageUrl": "https://picsum.photos/seed/303/600/400",
-      "imageHint": "brand logo"
+      "description": "Thumbnail for a legal education video series.",
+      "imageUrl": "https://images.unsplash.com/photo-1622295023876-0cdf583c41f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvbmxpbmUlMjBsZWFybmluZ3xlbnwwfHx8fDE3NTg4MDczMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online learning"
     }
   ]
 }

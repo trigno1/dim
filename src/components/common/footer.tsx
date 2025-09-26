@@ -5,10 +5,10 @@ import { Linkedin, Mail, Scale } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const usefulLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About Us' },
-  { href: '#blog', label: 'Blogs' },
-  { href: '#projects', label: 'Testimonials' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About Us' },
+  { href: '/#blog', label: 'Blogs' },
+  { href: '/projects', label: 'Testimonials' },
   { href: '/submit-blog', label: 'Submit your own blog' },
 ];
 
@@ -28,7 +28,7 @@ export function Footer() {
             <ul className="space-y-2 text-secondary-foreground">
               {usefulLinks.map(link => (
                 <li key={link.label}>
-                  <Link href={link.href} className="hover:text-primary-foreground transition-colors">
+                  <Link href={link.href} className="text-current hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
