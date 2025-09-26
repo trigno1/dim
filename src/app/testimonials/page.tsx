@@ -1,14 +1,14 @@
 import { Header } from "@/components/common/header";
 import { Footer } from "@/components/common/footer";
-import { Projects as ProjectsSection } from "@/components/sections/projects";
+import { Testimonials as TestimonialsSection } from "@/components/sections/testimonials";
 import { PageTransition } from "@/components/page-transition";
 
-export default function ProjectsPage() {
+export default function TestimonialsPage() {
   return (
     <PageTransition>
       <Header />
       <main>
-        <ProjectsSection />
+        <TestimonialsSection />
       </main>
       <Footer />
     </PageTransition>

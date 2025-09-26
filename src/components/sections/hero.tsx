@@ -16,7 +16,7 @@ export function Hero() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  const mountainImage = PlaceHolderImages.find(p => p.id === 'hero-mountain');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-mountain');
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden p-0">
@@ -24,17 +24,17 @@ export function Hero() {
         className="absolute inset-0 z-0"
         style={{ transform: `translateY(${offsetY * 0.4}px)` }}
       >
-        {mountainImage && (
+        {heroImage && (
           <Image
-            src={mountainImage.imageUrl}
-            alt={mountainImage.description}
-            data-ai-hint={mountainImage.imageHint}
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            data-ai-hint={heroImage.imageHint}
             fill
             className="object-cover object-center"
             priority
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/80" />
       </div>
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-foreground p-4">
