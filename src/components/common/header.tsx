@@ -10,8 +10,12 @@ import { Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/#about', label: 'About Us' },
+  { href: '/#contribute', label: 'How to Contribute' },
+  { href: '/#blog', label: 'Our Blogs' },
+  { href: '/#testimonials', label: 'Testimonials' },
+  { href: '/publish-with-us', label: 'Submit Now' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -29,7 +33,7 @@ export function Header() {
     <Link
       key={link.href}
       href={link.href}
-      className="text-sm font-medium transition-colors hover:text-primary"
+      className="text-sm font-medium transition-colors hover:text-primary-foreground"
     >
       {link.label}
     </Link>
@@ -42,25 +46,33 @@ export function Header() {
         hasScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 text-white">
         <Link href="/" className="flex items-center gap-2 font-headline text-lg font-semibold">
           <Image src="/logo.png" alt="Legal Verse Logo" width={24} height={24} />
-          <span>Legal Verse</span>
+          <span className={cn(hasScrolled ? 'text-foreground' : 'text-white')}>Legal Verse</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
-          {navItems}
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn("text-sm font-medium transition-colors hover:text-primary-foreground/80", hasScrolled ? 'text-foreground' : 'text-white')}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className={cn(hasScrolled ? 'text-foreground' : 'text-white', "hover:bg-white/10")}>
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="grid gap-6 text-lg font-medium mt-8">
-                <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
+                <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-foreground">
                    <Image src="/logo.png" alt="Legal Verse Logo" width={24} height={24} />
                   <span>Legal Verse</span>
                 </Link>

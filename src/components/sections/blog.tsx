@@ -8,10 +8,10 @@ export function Blog() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">
-            From the Journal
+            Our Blogs & Articles
           </h2>
           <p className="mt-2 text-lg text-foreground/80">
-            My latest thoughts on law, life, and the pursuit of justice.
+            Insights and analysis from our community of legal experts.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

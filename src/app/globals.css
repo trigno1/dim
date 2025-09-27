@@ -14,9 +14,9 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 30 25% 97%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 4.8% 95.9%; /* Neutral Gray */
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 212 47% 17%; /* #182b40 */
+    --primary: 212 47% 17%; /* #182b40 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 212 47% 12%; /* Darker Shade for footer */
     --secondary-foreground: 0 0% 98%;
     --muted: 30 20% 92%;
     --muted-foreground: 240 3.8% 46.1%;
@@ -49,9 +49,9 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 240 3.7% 15.9%;
+    --primary: 212 47% 17%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 212 47% 17%;
+    --secondary: 212 47% 12%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
@@ -87,6 +87,9 @@ body {
   }
   section {
     @apply w-full py-16 md:py-24 lg:py-32;
+  }
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
   }
 }
 

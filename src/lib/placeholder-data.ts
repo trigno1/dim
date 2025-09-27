@@ -14,6 +14,7 @@ export const blogPosts = [
     excerpt: 'Exploring how technology is reshaping the legal landscape, from AI-powered research to virtual courtrooms.',
     image: getImage('blog-1'),
     tags: ['Legal Tech', 'Innovation'],
+    author: 'Jane Doe',
   },
   {
     slug: 'understanding-intellectual-property',
@@ -21,6 +22,7 @@ export const blogPosts = [
     excerpt: 'Demystifying the world of patents, trademarks, and copyrights. Learn how to protect your creative and intellectual assets.',
     image: getImage('blog-2'),
     tags: ['IP Law', 'Startups'],
+    author: 'John Smith',
   },
   {
     slug: 'navigating-corporate-law',
@@ -28,6 +30,7 @@ export const blogPosts = [
     excerpt: 'Key considerations for business owners, from entity formation to corporate governance and compliance.',
     image: getImage('blog-3'),
     tags: ['Corporate Law', 'Business'],
+    author: 'Emily White',
   },
   {
     slug: 'the-art-of-negotiation',
@@ -35,29 +38,37 @@ export const blogPosts = [
     excerpt: 'A deep dive into effective negotiation tactics and communication skills essential for achieving favorable outcomes.',
     image: getImage('blog-4'),
     tags: ['Skills', 'Negotiation'],
+    author: 'Michael Brown',
   },
 ];
 
-export const projects = [
+export const testimonials = [
   {
-    title: 'Pro Bono Portal',
-    description: 'A web platform connecting volunteer lawyers with non-profit organizations in need of legal assistance.',
-    image: getImage('project-1'),
-    link: '#',
+    quote: "Contributing to Legal Verse has been a fantastic experience. The platform is professional, the editorial team is supportive, and it has significantly boosted my online presence.",
+    name: "Dr. Alisha Sharma",
+    designation: "Legal Scholar",
+    avatar: getImage('avatar-1'),
   },
   {
-    title: 'Contract Analyzer AI',
-    description: 'An AI-powered tool that reviews legal contracts, identifies key clauses, and highlights potential risks.',
-    image: getImage('project-2'),
-    link: '#',
+    quote: "As a law student, I find the articles on Legal Verse incredibly insightful and well-written. It's an indispensable resource for my studies and career preparation.",
+    name: "Rahul Verma",
+    designation: "Law Student",
+    avatar: getImage('avatar-2'),
   },
   {
-    title: 'Legal Education Series',
-    description: 'A series of animated videos explaining complex legal concepts to the general public in an accessible way.',
-    image: getImage('project-3'),
-    link: '#',
+    quote: "The submission process was straightforward, and my article was published promptly. I appreciate the opportunity to share my expertise with a broader audience.",
+    name: "Adv. Priyanka Singh",
+    designation: "Advocate",
+    avatar: getImage('avatar-3'),
+  },
+   {
+    quote: "A brilliant platform for anyone interested in the nuances of law. The quality of content is consistently high, and the topics are always relevant and engaging.",
+    name: "Prof. David Chen",
+    designation: "University Professor",
+    avatar: getImage('avatar-4'),
   },
 ];
+
 
 export type Blog = typeof blogPosts[0];
-export type Project = typeof projects[0];
+export type Testimonial = typeof testimonials[0];

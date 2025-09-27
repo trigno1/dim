@@ -1,21 +1,21 @@
-import { Handshake, Lightbulb, Pencil } from "lucide-react";
+import { FileCheck, MailCheck, UserPlus } from "lucide-react";
 
 export function HowToContribute() {
-  const features = [
+  const steps = [
     {
-      icon: <Pencil className="w-8 h-8 mb-4 text-primary" />,
-      title: "Submit an Article",
-      description: "Share your expertise and insights with our community by submitting a blog post or article. We welcome well-researched and engaging content on a variety of legal topics.",
+      icon: <FileCheck className="w-10 h-10 mb-4 text-primary" />,
+      title: "Step 1: Submit Your Blog or Article",
+      description: "Submit your blog or article on your desired topic. Ensure it's original, well-researched, and not filled with false information.",
     },
     {
-      icon: <Lightbulb className="w-8 h-8 mb-4 text-primary" />,
-      title: "Suggest a Topic",
-      description: "Have an idea for a blog post but don't have the time to write it? Suggest a topic, and our team of writers will consider it for a future article.",
+      icon: <MailCheck className="w-10 h-10 mb-4 text-primary" />,
+      title: "Step 2: Review & Confirmation",
+      description: "Our team will review your submission. If it meets our quality standards and guidelines, we will send you a confirmation email.",
     },
     {
-      icon: <Handshake className="w-8 h-8 mb-4 text-primary" />,
-      title: "Become a Partner",
-      description: "If you're a legal professional or organization, we're open to collaboration. Partner with us to share your resources and reach a wider audience.",
+      icon: <UserPlus className="w-10 h-10 mb-4 text-primary" />,
+      title: "Step 3: Share Your Details",
+      description: "Once approved, share your details like name, email, contact info, and LinkedIn profile. We'll feature them with your published piece.",
     },
   ]
 
@@ -24,18 +24,21 @@ export function HowToContribute() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">
-            How You Can Be a Part
+            How Can You Be A Part?
           </h2>
           <p className="mt-2 text-lg text-foreground/80">
-            Join our mission to make legal knowledge accessible to everyone.
+            Join Our Community of Legal Writers.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          {features.map((feature) => (
-            <div key={feature.title} className="p-6 border border-border/20 rounded-lg bg-background shadow-sm">
-              {feature.icon}
-              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-              <p className="text-foreground/80">{feature.description}</p>
+          {steps.map((step, index) => (
+            <div key={step.title} className="p-8 border border-border/20 rounded-lg bg-background shadow-lg relative">
+               <div className="absolute top-4 left-4 bg-primary text-primary-foreground rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg">{index+1}</div>
+              <div className="mt-8">
+                {step.icon}
+                <h3 className="text-xl font-bold mb-2 mt-4">{step.title}</h3>
+                <p className="text-foreground/80">{step.description}</p>
+              </div>
             </div>
           ))}
         </div>

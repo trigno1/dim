@@ -8,10 +8,12 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
+import { Send } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
+  subject: z.string().min(5, { message: 'Subject must be at least 5 characters.' }),
   message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
 });
 
@@ -22,29 +24,29 @@ export function Contact() {
     defaultValues: {
       name: '',
       email: '',
+      subject: '',
       message: '',
     },
   });
 
-  // A mock submission handler.
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     console.log(values);
     toast({
       title: 'Message Sent!',
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      description: "Thanks for reaching out. We'll get back to you soon.",
     });
     form.reset();
   };
 
   return (
-    <section id="contact" className="bg-secondary/50">
+    <section id="contact" className="bg-secondary/5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">
-            Let's Connect
+            Connect with us for doubt or collaboration
           </h2>
           <p className="mt-2 text-lg text-foreground/80">
-            Have a question, a project idea, or just want to say hi?
+            Have a question or a proposal? Drop us a line.
           </p>
         </div>
         <div className="max-w-2xl mx-auto">
@@ -78,6 +80,19 @@ export function Contact() {
               />
               <FormField
                 control={form.control}
+                name="subject"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Subject</FormLabel>
+                    <FormControl>
+                      <Input placeholder="What is this about?" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
                 name="message"
                 render={({ field }) => (
                   <FormItem>
@@ -90,7 +105,7 @@ export function Contact() {
                 )}
               />
               <div className="text-center">
-                <Button type="submit" size="lg">Send Message</Button>
+                <Button type="submit" size="lg">Send <Send className="ml-2 h-4 w-4" /></Button>
               </div>
             </form>
           </Form>
